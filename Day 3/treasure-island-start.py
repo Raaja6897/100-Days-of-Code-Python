@@ -1,0 +1,86 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+
+
+# Method 1
+txt=input("Left or Right\n").lower()
+
+if txt=='left':
+    ask_1=input("Swim or Wait\n").lower()
+    if ask_1=='swim':
+        print("You got attacked by shark,Game Over")
+    if ask_1=='wait':
+        ask_2=input("Which door, Red, Yellow or Blue\n").lower()
+        if ask_2=='red':
+            print("Your entered has a dragon and it burned you,Game Over")
+        if ask_2=='yellow':
+            print("You found the treasure, You Won")
+        if ask_2=='blue':
+            print("The door you entered is full of snakes, Game Over")
+
+if txt=='right':
+    print("You fell into a hole, Game Over")
+'''
+# Method 2 from course
+
+choice1=input('You\' are at the crossroad, where do you want to go? Left or Right')
+
+if choice1=='left':
+    choice2=input('You\'ve come to a lake. This is a island in middle of the lake.Type "wait" to wait for the boat. Type "swim" to'
+                  ' swin')
+    if choice2=='wait':
+        choice3=input("You arrived at the island unharmed. There is a house with 3 doors. one red, one yellow, one blue"
+                      " which color do you choose").lower()
+        if choice3=='red':
+            print("The room you enter is full of fire, Game Over")
+        elif choice3=='yellow':
+            print("You found the treasure! You Won!")
+        elif choice3=='blue':
+            print("You entered a room of beasts, Game Over")
+        else:
+            print("You chose a door that doesn't exist, Game Over")
+    else:
+        print("You are attacked by an angry tout, Game Over")
+else:
+    print("You fell into a hole. Game Over")
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
